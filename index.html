@@ -36,7 +36,7 @@
 
     <!-- js 적용-->
     <script src="js/html5shiv.js"></script>
-    <script src="js/prefixfree.min.js"></script>
+    <!-- <script src="js/prefixfree.min.js"></script> -->
     <script src="js/jquery-1.12.3.js"></script>
     <script src="js/respond.min.js"></script>
 
@@ -45,22 +45,73 @@
 
 </head>
 <body>
+    <!-- 모달창 -->
+    <!-- 플라잉 베너(스티커) -->
+     <!-- 쿽메뉴 -->
+    <!-- 전체 레이아웃 -->
     <div class="wrap">
-        <!-- 헤더 -->
-        <!-- 슬라이드 이미지 -->
-        <!-- 메인(상품) -->
-        <div class="main-product-wrap">
-            <!-- 쇼핑 추천 -->
-            <!-- 투어특가 -->
-            <!-- 티켓 랭킹 -->
-            <!-- 인터파크 라이브 -->
-            <!-- 오늘의 도서 -->
-            <!-- 이벤트 -->
-        </div>
-        <footer class="footer">
-            <!-- 푸터 상단 | 회사소개 등 -->
-            <!--  -->
-        </footer>
+        <!-- 상단 -->
+        <header class="header">
+            <div class="inner">
+                <!-- 헤더 상단 -->
+                <div class="header-top">
+                    <!-- 헤더 상단 왼쪽 -->
+                    <div class="header-left">
+                        <a href="#" class="logo"></a>
+                        <form action="#" class="search">
+                            <input type="text" class="search-text" maxlength="50" placeholder="검색어를 입력해 주세요">
+                            <input type="reset" class="search-reset">
+                            <input type="button" class="search-button">
+                        </form>
+                    </div>
+                    <!-- 헤더 상단 오른쪽 -->
+                    <div class="header-right">
+                        <ul class="memder-list">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li>
+                                <a href="#">마이페이지 <i class="icon-arrow"></i></a>
+                                <ul class="myPage-list">
+                                    <li>
+                                        <a href="#"><b>투어</b> 마이 페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><b>티켓</b> 마이 페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><b>쇼핑</b> 마이 페이지</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><b>도서</b> 마이 페이지</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a href="#" class="mb-mypage">
+                            <img src="images/icon_mypage.svg" alt="마이페이지" />
+                        </a>
+                    </div>
+                </div>
+                <!-- 헤더 하단 -->
+                <div class="header-bottom"></div>
+            </div>
+        </header>
+        <!-- 추천 이벤트 -->
+        <section class="promotiom"></section>
+        <!-- 쇼핑추천 -->
+        <section class="shopping"></section>
+        <!-- 투어특가 -->
+        <section class="tour"></section>
+        <!-- 티켓랭킹 -->
+        <section class="ticket"></section>
+        <!-- 인터파크 라이브 -->
+        <section class="live"></section>
+        <!-- 오늘의 도서 -->
+        <section class="books"></section>
+        <!-- 이벤트 -->
+        <section class="event"></section>
+        <!-- 하단 -->
+        <footer class="footer"></footer>
     </div>
 </body>
 </html>
