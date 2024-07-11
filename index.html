@@ -19,7 +19,7 @@
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
@@ -29,10 +29,11 @@
     <!-- css 적용-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/normalize.css" />
-
+    
     <!-- 스와이퍼 css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css">
 
     <!-- js 적용-->
     <script src="js/html5shiv.js"></script>
@@ -42,6 +43,7 @@
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/index.js"></script>
 
 </head>
 <body>
@@ -70,19 +72,19 @@
                             <li><a href="#">로그인</a></li>
                             <li><a href="#">회원가입</a></li>
                             <li>
-                                <a href="#">마이페이지 <i class="icon-arrow"></i></a>
-                                <ul class="myPage-list">
+                                <a href="#" class="mypage-bt">마이페이지 <i class="icon-arrow"></i></a>
+                                <ul class="mypage-list">
                                     <li>
-                                        <a href="#"><b>투어</b> 마이 페이지</a>
+                                        <a href="#"><b>투어</b> 마이페이지</a>
                                     </li>
                                     <li>
-                                        <a href="#"><b>티켓</b> 마이 페이지</a>
+                                        <a href="#"><b>티켓</b> 마이페이지</a>
                                     </li>
                                     <li>
-                                        <a href="#"><b>쇼핑</b> 마이 페이지</a>
+                                        <a href="#"><b>쇼핑</b> 마이페이지</a>
                                     </li>
                                     <li>
-                                        <a href="#"><b>도서</b> 마이 페이지</a>
+                                        <a href="#"><b>도서</b> 마이페이지</a>
                                     </li>
                                 </ul>
                             </li>
@@ -93,7 +95,43 @@
                     </div>
                 </div>
                 <!-- 헤더 하단 -->
-                <div class="header-bottom"></div>
+                <div class="header-bottom">
+                    <ul class="service-list">
+                        <li>
+                          <a href="#"
+                            ><img src="images/icon_tour.png" alt="투어" />투어</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="images/icon_ticket.png" alt="티켓" />티켓</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="images/icon_shopping.png" alt="쇼핑" />쇼핑</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="images/icon_book.png" alt="도서" />도서</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#"
+                            ><img src="images/icon_triple.png" alt="트리플" />트리플</a
+                          >
+                        </li>
+                        <li>
+                          <a href="#">
+                            <img src="images/icon_nol.png" alt="NOL혜택" />NOL혜택</a
+                          >
+                        </li>
+                    </ul>
+                    <ul class="service-menu">
+                        <li><a href="#">티켓오픈</a></li>
+                    </ul>
+                </div>
             </div>
         </header>
         <!-- 추천 이벤트 -->
