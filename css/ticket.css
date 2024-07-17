@@ -1,0 +1,74 @@
+@charset "utf-8";
+.ticket .section-slide .sw-bt{
+    position: absolute;
+    top: 59%;
+}
+.ticket-link{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #33333320;
+}
+.ticket-img{
+    width: 100%;
+    height: 31.25vw;
+    max-height: 400px;
+    position: relative;
+    overflow: hidden;
+
+}
+.ticket-img::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    background: linear-gradient(180deg, transparent 70%, rgba(0, 0, 0, 0.7));
+}
+.ticket-img img{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+.ticket-rank{
+color: white;
+position: absolute;
+bottom: 15px;
+left: 15px;
+font-weight: 600;
+font-size: 70px;
+z-index: 10;
+}
+
+/* 티켓정보 */
+.ticket-info{
+    padding: 20px 10px;
+    text-align: left;
+}
+.ticket-title{
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.ticket-info-list li:first-child{
+    margin-bottom: 20px;
+}
+.ticket-info-list li{
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.ticket-info-list li:last-child{
+    margin-bottom: 0;
+}
+
+.ticket-sale{
+    color: red;
+    font-size: 13px;
+    padding: 2px 5px;
+    border: 1px solid rgba(255, 0, 0, 0.363);
+}
