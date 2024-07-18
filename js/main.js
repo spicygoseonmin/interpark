@@ -189,4 +189,55 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
+  const swLive = new Swiper(".sw-live", {
+    slidesPerView: 1.2,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    spaceBetween: 26,
+    breakpoints: {
+      400: {
+        spaceBetween:20,
+        slidesPerView:2,
+        slidesPerGroup:2,
+        grid: {
+          rows: 1,
+        },
+      },
+      768: {
+        spaceBetween:20,
+        slidesPerView:2,
+        slidesPerGroup:2,
+        grid: {
+          rows: 1,
+        },
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        grid: {
+          rows: 1,
+        },
+      },
+    },
+    navigation: {
+      nextEl: ".ticket .sw-next",
+      prevEl: ".ticket .sw-prev",
+    },
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
 };
