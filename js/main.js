@@ -85,6 +85,8 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
+
+  // 투어 슬라이드 기능
   const swTour = new Swiper(".sw-tour", {
     slidesPerView: 1.2,
     grid: {
@@ -189,6 +191,8 @@ window.onload = function () {
       disableOnInteraction: false,
     },
   });
+
+  // 라이브 슬라이드 기능
   const swLive = new Swiper(".sw-live", {
     slidesPerView: 1.2,
     grid: {
@@ -233,6 +237,117 @@ window.onload = function () {
     navigation: {
       nextEl: ".ticket .sw-next",
       prevEl: ".ticket .sw-prev",
+    },
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+
+
+
+
+
+  // 도서 슬라이드 기능
+  const swBook = new Swiper(".sw-book", {
+    slidesPerView: 1.2,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    spaceBetween: 26,
+    breakpoints: {
+      400: {
+        spaceBetween:20,
+        slidesPerView:2,
+        slidesPerGroup:2,
+        grid: {
+          rows: 3,
+        },
+      },
+      768: {
+        spaceBetween:20,
+        slidesPerView:2,
+        slidesPerGroup:2,
+        grid: {
+          rows: 2,
+        },
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 4,
+        slidesPerGroup: 4,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 5,
+        slidesPerGroup: 5,
+        grid: {
+          rows: 1,
+        },
+      },
+    },
+    navigation: {
+      nextEl: ".ticket .sw-next",
+      prevEl: ".ticket .sw-prev",
+    },
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+  });
+
+
+  // 이벤트 슬라이드 기능
+  const swEvent = new Swiper(".sw-event", {
+    slidesPerView: 1.2,
+    grid: {
+      rows: 1,
+      fill: "row",
+    },
+    spaceBetween: 26,
+    breakpoints: {
+      400: {
+        spaceBetween:20,
+        slidesPerView:2,
+        slidesPerGroup:2,
+        grid: {
+          rows: 1,
+        },
+      },
+      768: {
+        spaceBetween:20,
+        slidesPerView:2,
+        slidesPerGroup:2,
+        grid: {
+          rows: 1,
+        },
+      },
+      1024: {
+        spaceBetween: 32,
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        grid: {
+          rows: 1,
+        },
+      },
+      1280: {
+        spaceBetween: 26,
+        slidesPerView: 4,
+        slidesPerGroup: 1,
+        grid: {
+          rows: 1,
+        },
+      },
+    },
+    navigation: {
+      nextEl: ".event .sw-next",
+      prevEl: ".event .sw-prev",
     },
     loop: true,
     autoplay: {

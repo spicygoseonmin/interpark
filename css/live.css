@@ -1,28 +1,34 @@
 @charset "utf-8";
+
 .live .section-top > h2 > img{
     padding-bottom: 15px;
 }
 .live .section-top{
+    height: 100%;
     margin-bottom: 25px
 }
 .live .section-slide{
     height: 455px;
 }
-.sw-live{
-    height: 100%;
+.sw-live{ 
+    height: 455px;
 }
 .live-link{
     display: block;
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 30.25vw;
+    max-height: 455px;
+    min-height: 300px;
     border-radius: 10px;
     overflow: hidden;
 }
 
 .live-img{
     width: 100%;
-    height: 100%;
+    height: 30.25vw;
+    max-height: 455px;
+    min-height: 300px;
     position: relative;
 }
 .live-img img{
@@ -37,7 +43,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 30.25vw;
+    max-height: 455px;
+    min-height: 300px;
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
     text-align: left;
