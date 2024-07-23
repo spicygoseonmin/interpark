@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* 플라잉 베너 */
+.fix-banner {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 999999;
+    text-align: center;
+}
+.fix-banner a {
+    display: block;
+    border-radius: 50px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+}
+
+.fix-banner a img {
+    }
+
+#gotop {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    background: #fff url("../images/btn_topArrow.svg") no-repeat center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.13);
+    font-size: 0;
+    margin-top: 10px;
+}

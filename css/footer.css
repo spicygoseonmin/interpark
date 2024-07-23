@@ -2,6 +2,12 @@
 .footer{
     width: 100%;
 }
+.footer .f-icon{
+    
+}
+.footer strong{
+    font-weight: 600;
+}
 .footer-top{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -35,12 +41,50 @@
 }
 .footerB h1{
     margin: 0;
-    font-size: 1.25rem;
+    width: 10rem;
+    font-size: 0.94rem;
     font-weight: 600;
 }
 .footerB ul{
-    width: 70%;
+    padding-top: 0.15rem;
+    width: 100%;
+}
+.footer-bottom-right ul{
+    width: calc(100% - 20px);
 }
 .footerB ul> li {
     padding: 0 0 20px 10px;
+    font-size: 0.8rem;
+    color: #505050;
+    line-height: 0.94rem;
+    letter-spacing: -0.05rem;
+}
+.footerB ul> li strong{
+    color: black;
+}
+.footerB ul> li:last-of-type {
+    padding: 0 0 20px 10px;
+    font-size: 0.8rem;
+    color: #cacaca;
+}
+.footerB ul> li:last-of-type h1 {
+    font-size: 0.8rem;
+    color: #cacaca;
+}
+
+
+/*  서브 메뉴 */
+.footer-top .more-list{
+    display: none
+}
+
+
+/* 선 */
+.footerLine{
+    margin: 0 30px;
+    width: 1px;
+    height: 300px;
+    /* min-height: 100px;
+    max-height: 500px; */
+    background-color: #50505031;
 }
